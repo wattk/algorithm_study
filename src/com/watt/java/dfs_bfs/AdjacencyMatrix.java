@@ -32,7 +32,7 @@ public class AdjacencyMatrix {
 				 if(graph[v][i] == 1 && ch[i] == 0) {
 					 ch[i] = 1;
 					 DFS(i);
-					 ch[i] = 0; //호출한 것을 다시 취소
+					 ch[i] = 0; //호출한 것을 다시 취소해야 한다.
 				 }
 			 }
 		 }
